@@ -1,0 +1,63 @@
+<div class="card">
+  <div *ngIf="!isMovieLoaded" class="card-header">
+      <h2>Movie Details Not Found :( <br> wrong id used maybe :(</h2>
+  </div>
+  <div *ngIf="isMovieLoaded" class="card-body" >
+      <div class="row movie-container">
+          <div class="col-md-1"></div>
+
+          <div class="col-md-3">
+              <img src={{movie.movieUrl}} alt="Movie Poster" [style.width.px]="250" />
+          </div>
+
+          <div class="col-md-5">
+              <div class="row">
+                <h1 class="font-weight-bold">{{movie.movieName }} </h1>
+          </div>
+
+          <div class="col-md-1"></div>
+              <table>
+
+
+                <tr>
+                  <td>Language </td>
+                  <td>: {{movie.language}}</td>
+                </tr>
+
+                <tr>
+                  <td>Duration</td>
+                  <td>: {{movie.duration}} hr</td>
+                </tr>
+
+                <tr>
+                  <td>Rating</td>
+                  <td>: {{movie.rating}} ⭐</td>
+                </tr>
+
+                <tr>
+                  <td>Genre</td>
+                  <td>: {{movie.genre}}</td>
+                </tr>
+
+                <tr >
+                  <td colspan="2" class="about-margin"><h4><b>About</b></h4></td>
+                </tr>
+
+                <tr>
+                  <td colspan="2">{{movie.description}}</td>
+                </tr>
+
+              </table>
+
+               <button class="btn btn-primary mt-4 book-ticket-button">Book Tickets</button>
+
+          </div>
+        </div>
+
+  </div>
+  <div class="card-footer">
+      <button class="btn btn-outline-secondary" style="width:80px" routerLink="">
+          <i class="fa fa-chevron-left"></i>Back
+      </button>
+  </div>
+</div>

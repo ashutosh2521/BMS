@@ -1,0 +1,15 @@
+D:\Book-My-Show\BookMyShow.Services\bin\Debug\net5.0\BookMyShow.Services.deps.json
+D:\Book-My-Show\BookMyShow.Services\bin\Debug\net5.0\BookMyShow.Services.dll
+D:\Book-My-Show\BookMyShow.Services\bin\Debug\net5.0\ref\BookMyShow.Services.dll
+D:\Book-My-Show\BookMyShow.Services\bin\Debug\net5.0\BookMyShow.Services.pdb
+D:\Book-My-Show\BookMyShow.Services\bin\Debug\net5.0\BookMyShow.Models.dll
+D:\Book-My-Show\BookMyShow.Services\bin\Debug\net5.0\BookMyShow.Models.pdb
+D:\Book-My-Show\BookMyShow.Services\obj\Debug\net5.0\BookMyShow.Services.csproj.AssemblyReference.cache
+D:\Book-My-Show\BookMyShow.Services\obj\Debug\net5.0\BookMyShow.Services.GeneratedMSBuildEditorConfig.editorconfig
+D:\Book-My-Show\BookMyShow.Services\obj\Debug\net5.0\BookMyShow.Services.AssemblyInfoInputs.cache
+D:\Book-My-Show\BookMyShow.Services\obj\Debug\net5.0\BookMyShow.Services.AssemblyInfo.cs
+D:\Book-My-Show\BookMyShow.Services\obj\Debug\net5.0\BookMyShow.Services.csproj.CoreCompileInputs.cache
+D:\Book-My-Show\BookMyShow.Services\obj\Debug\net5.0\BookMyShow.Services.csproj.CopyComplete
+D:\Book-My-Show\BookMyShow.Services\obj\Debug\net5.0\BookMyShow.Services.dll
+D:\Book-My-Show\BookMyShow.Services\obj\Debug\net5.0\ref\BookMyShow.Services.dll
+D:\Book-My-Show\BookMyShow.Services\obj\Debug\net5.0\BookMyShow.Services.pdb

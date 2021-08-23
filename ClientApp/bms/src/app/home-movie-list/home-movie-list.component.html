@@ -1,0 +1,12 @@
+<div class="movie-container d-flex justify-content-around my-sm-2 mx-sm-5 px-sm-5">
+
+
+<div class="card" style="width: 18rem;" *ngFor="let movie of filteredMovies">
+  <img class="card-img-top " src={{movie.movieUrl}} alt="Card image cap">
+  <div class="card-body">
+    <h3 class="card-title font-weight-bold text-center">{{movie.movieName}}</h3>
+    <p class="text-center">{{movie.genre}}</p>
+    <a [routerLink]="['/movie-detail', movie.movieId]" class="btn btn-primary movie-detail-button">About Movie</a>
+  </div>
+</div>
+</div>

@@ -1,0 +1,12 @@
+D:\Book-My-Show\BookMyShow.Models\bin\Debug\net5.0\BookMyShow.Models.deps.json
+D:\Book-My-Show\BookMyShow.Models\bin\Debug\net5.0\BookMyShow.Models.dll
+D:\Book-My-Show\BookMyShow.Models\bin\Debug\net5.0\ref\BookMyShow.Models.dll
+D:\Book-My-Show\BookMyShow.Models\bin\Debug\net5.0\BookMyShow.Models.pdb
+D:\Book-My-Show\BookMyShow.Models\obj\Debug\net5.0\BookMyShow.Models.csproj.AssemblyReference.cache
+D:\Book-My-Show\BookMyShow.Models\obj\Debug\net5.0\BookMyShow.Models.GeneratedMSBuildEditorConfig.editorconfig
+D:\Book-My-Show\BookMyShow.Models\obj\Debug\net5.0\BookMyShow.Models.AssemblyInfoInputs.cache
+D:\Book-My-Show\BookMyShow.Models\obj\Debug\net5.0\BookMyShow.Models.AssemblyInfo.cs
+D:\Book-My-Show\BookMyShow.Models\obj\Debug\net5.0\BookMyShow.Models.csproj.CoreCompileInputs.cache
+D:\Book-My-Show\BookMyShow.Models\obj\Debug\net5.0\BookMyShow.Models.dll
+D:\Book-My-Show\BookMyShow.Models\obj\Debug\net5.0\ref\BookMyShow.Models.dll
+D:\Book-My-Show\BookMyShow.Models\obj\Debug\net5.0\BookMyShow.Models.pdb
