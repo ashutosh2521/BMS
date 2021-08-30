@@ -17,11 +17,10 @@ namespace BMS.Controllers
     public class MovieController : ControllerBase
     {
         private MovieService _movieService;
-        private readonly IMapper _mapper;
-        public MovieController(MovieService movieService, IMapper mapper)
+        
+        public MovieController(MovieService movieService)
         {
             _movieService = movieService;
-            _mapper = mapper;
         }
 
 
@@ -34,7 +33,7 @@ namespace BMS.Controllers
                 return NotFound();
 
             return Ok(movies);
-           //return Ok(_mapper.Map<List<MovieVm>>(movies));
+           
 
 
         }
@@ -47,7 +46,7 @@ namespace BMS.Controllers
             if (movie == null)
                 return NotFound();
 
-            return Ok(_mapper.Map<Movie>(movie));
+            return Ok(movie);
 
         }
 

@@ -23,7 +23,6 @@ namespace BookMyShow.Services.Services
         public List<Movie> GetAllMovies()
         {
             //return _context.Movies.ToList();
-            //return _db.Query<Movie>("SELECT * FROM Movies").ToList();
             return _db.Query<Movie>("SELECT * FROM Movies").ToList();
         }
 
@@ -31,7 +30,7 @@ namespace BookMyShow.Services.Services
         public Movie GetMovieById(int id)
         {
             //return _context.Movies.SingleOrDefault(c => c.MovieId == id);
-            return _db.Query<Movie>("SELECT * FROM Movies WHERE MovieId =" + id).SingleOrDefault();
+            return _db.Query<Movie>("SELECT * FROM Movies WHERE MovieId =@id",new { id }).SingleOrDefault();
         }
 
     }

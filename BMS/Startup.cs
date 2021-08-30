@@ -53,6 +53,9 @@ namespace BMS
 
 
             services.AddTransient<MovieService>();
+            services.AddTransient<TheaterService>();
+            services.AddTransient<SeatService>();
+            services.AddTransient<TicketService>();
 
             services.AddCors();
         }

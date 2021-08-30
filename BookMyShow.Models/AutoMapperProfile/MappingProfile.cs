@@ -14,9 +14,16 @@ namespace BookMyShow.Models.AutoMapperProfile
         public MappingProfile()
         {
 
-            CreateMap<MovieVm, Movie>();
-            CreateMap<List<MovieVm>, List<Movie>>();
-            CreateMap<Movie, MovieVm>();
+            CreateMap<MovieVm, Movie>().ReverseMap();
+            //CreateMap<List<MovieVm>, List<Movie>>().ReverseMap();
+
+            CreateMap<SeatVm, Seat>().ReverseMap();
+
+            CreateMap<TheatreVm, Theatre>().ReverseMap();
+
+            CreateMap<TicketVm, Ticket>().ReverseMap();
+
+
 
         }
     }
