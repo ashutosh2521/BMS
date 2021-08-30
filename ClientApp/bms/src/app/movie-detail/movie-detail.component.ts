@@ -13,10 +13,12 @@ export class MovieDetailComponent implements OnInit {
   id = 0;
   movie: any;
   isMovieLoaded = false;
+  movieId : number | null = 0;
 
   constructor(private route: ActivatedRoute,
     private router: Router,
     private movieService: MovieServiceService) { }
+
 
     ngOnInit(): void {
     this.route.paramMap.subscribe(
@@ -26,20 +28,27 @@ export class MovieDetailComponent implements OnInit {
 
           if(id != null)
             {
-                  this.movieService.getMovieById(+id).subscribe(res => {
+                  this.movieId = +id;
+
+                  this.movieService.getMovieById(+id).subscribe(res =>
+                  {
                     if(res != null)
-                           this.isMovieLoaded = true;
+                    {
+                      this.isMovieLoaded = true;
+                    }
+
                     this.movie = res;
                   })
 
             }
-
-
-
         }
-
-
       );
   }
+
+   NavigateToTheaterComponent()
+   {
+
+   }
+
 
 }

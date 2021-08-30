@@ -1,0 +1,31 @@
+<div  *ngFor = "let seat of SeatsBooked"  class="cardWrap row w-50 bg-white">
+  <div class="card col-8">
+    <h1>{{Theatre.theatreName}}</h1>
+    <div class="title">
+      <h2>{{movieBooked.movieName}}</h2>
+      <span>movie</span>
+    </div>
+    <div class="name">
+      <h2>{{bookerName}}</h2>
+      <span>name</span>
+    </div>
+    <div class="seat">
+      <h2>{{seat.seatCode}}</h2>
+      <span>seat</span>
+    </div>
+    <div class="time">
+      <h2>{{timing}} pm</h2>
+      <span>time</span>
+    </div>
+
+  </div>
+  <div class="card col-4">
+    <div class="eye"></div>
+    <div class="number">
+      <h3>{{seat.seatCode}}</h3>
+      <span>seat</span>
+    </div>
+    <div class="barcode"></div>
+  </div>
+</div>
+

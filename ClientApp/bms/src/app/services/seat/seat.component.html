@@ -1,0 +1,46 @@
+<div class="position-absolute bg-light w-100 top-0 end-0 right-0">
+  <div class="container bg-white w-75 py-10">
+    <a [routerLink]="['..']" class="text-decoration-none text-danger cross">&times;</a>
+
+    <div class="row pb-3">
+       <div class="col-3"></div>
+       <div class="col"><h1><strong>{{Theatre.theatreName}}</strong></h1></div>
+       <div class="col-2"></div>
+    </div>
+
+    <div class="row">
+      <table>
+        <tr>
+          <td>Enter Your Name :<input type="text" (keyup)="onNamePress($event)"><span class="text-danger">*</span></td>
+          <td>Enter Number Of Seats :
+            <!-- <input type="number" (keyup)="onSeatPress($event)"><span class="text-danger">*</span> -->
+            <select id="seats" name="seats" size="1" (change) = "onSeatPress($event)" >
+              <option  selected> Select Seat Count</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+            </select>
+          </td>
+        </tr>
+     </table>
+    </div>
+
+
+    <div *ngIf="isValid">
+        <div class="flex p-5 w-100 overflow-auto">
+          <ul class="list-unstyled">
+            <li class="list-inline-item border cell w-40 ps-1 d-flex align-items-center justify-content-center" *ngFor="let seat of Seats;index as i" [ngClass]="{'bg-success text-white rounded': seat.isActive == 1, 'border border-success bg-danger rounded': seat.isBooked == 1, 'border border-success rounded': seat.isActive == 0 || seat.isBooked == 0}">
+                 <button (click)="selectSeat(seat.id)" value="{{seat.id}}" [ngClass]="{'non-click': seat.isBooked == 1}" >{{seat.seatCode}}</button>
+            </li>
+          </ul>
+        </div>
+        <div class="screen col-12 text-center">SCREEN</div>
+
+         <div *ngIf="price!=0" class="d-flex justify-content-center py-4 bg-light w-100">
+                <input type="button"   (click)="paymentButtonClick($event)" class="btn btn-danger text-center" value="Pay Rs.{{price}}">
+         </div>
+    </div>
+  </div>
+</div>
